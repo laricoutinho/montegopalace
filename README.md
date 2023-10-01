@@ -40,7 +40,7 @@ Nesta seção, os visitantes podem encontrar informações de contato do hotel, 
 
 ## Estilos CSS
 
-O arquivo `styles.css` contém estilos CSS que são aplicados ao site para torná-lo atraente e responsivo. Alguns dos estilos notáveis incluem:
+O arquivo `styles.css` contém estilos CSS que são aplicados ao site para torná-lo atraente. Alguns dos estilos notáveis incluem:
 
 - Estilos para o cabeçalho, barra de navegação e rodapé.
 - Estilos para os cartões de acomodação e restaurante.
@@ -75,7 +75,7 @@ Não é necessário instalar nada para executar o projeto. Basta abrir o arquivo
 - `<html>`: Define o elemento raiz que engloba todo o conteúdo HTML do documento.
 - `<head>`: Contém informações sobre o documento, como metadados, títulos e links para folhas de estilo.
 - `<meta charset="UTF-8">`: Define a codificação de caracteres como UTF-8, permitindo que caracteres especiais sejam exibidos corretamente.
-- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Configura a escala inicial da viewport para dispositivos móveis, tornando o site responsivo.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Configura a escala inicial da viewport para dispositivos móveis.
 - `<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">`: Especifica o ícone da página, exibido na guia do navegador.
 - `<title>`: Define o título da página exibido na barra de título do navegador.
 - `<link rel="stylesheet" type="text/css" href="styles.css">`: Liga o arquivo de estilo externo styles.css à página.
@@ -90,13 +90,12 @@ Não é necessário instalar nada para executar o projeto. Basta abrir o arquivo
 - `<h1>`: Título principal da seção inicial.
 - `<p>`: Parágrafo na seção inicial.
 - `<div id="reservas">`: Define uma seção para reservas.
-- `<div>`: Contêiner genérico.
 - `<form>`: Cria um formulário para entrada de dados.
 - `<input type="date" name="Data">`: Cria um campo de entrada de data no formulário.
 - `<input type="submit" value="checar disponibilidade">`: Cria um botão de envio no formulário.
 - `<div id="ohotel">`: Define uma seção sobre o hotel.
 - `<h3>`: Título da seção sobre o hotel.
-- `<img src="img/fachadahoteljpg.jpg" alt="Frente do Hotel">`: Exibe uma imagem com uma descrição alternativa.
+- `<img src="img/fachadahoteljpg.jpg" alt="Frente do Hotel">`: Exibe uma imagem com uma descrição.
 - `<div class="paragrafos">`: Define uma div para parágrafos na seção sobre o hotel.
 - `<p>`: Parágrafo na seção sobre o hotel.
 - `<div id="acomodacoes">`: Define uma seção sobre as acomodações do hotel.
@@ -106,7 +105,7 @@ Não é necessário instalar nada para executar o projeto. Basta abrir o arquivo
 - `<div class="image">`: Define uma div para a imagem da acomodação.
 - `<div class="description">`: Define uma div para a descrição da acomodação.
 - `<p>`: Parágrafo na descrição da acomodação.
-- `<em>`: Texto enfatizado (itálico) na descrição da acomodação.
+- `<em>`: Texto enfatizado em itálico na descrição da acomodação.
 - `<section id="contato">`: Define uma seção de contato.
 - `<div class="content">`: Define o conteúdo da seção de contato.
 - `<h3>`: Título da seção de contato.
@@ -119,85 +118,39 @@ Não é necessário instalar nada para executar o projeto. Basta abrir o arquivo
 ### HTML da Segunda Página
 
 - `<div idd="titulodf">`: Esta tag `<div>` é usada para criar uma divisão ou seção na página e possui um atributo `idd` com o valor "titulodf".
-- `<h1>`: Esta tag `<h1>` é usada para criar um cabeçalho de nível 1, indicando o título principal da página. Neste caso, o título é "Dúvidas Frequentes".
+- `<h1>`: Esta tag `<h1>` é usada para criar um cabeçalho de nível 1, indicando o título principal da página.
 - `<p>`: Esta tag `<p>` é usada para criar parágrafos de texto.
-- `<br>`: Esta tag `<br>` é usada para criar uma quebra de linha, o que gera uma linha em branco no texto.
-- `<ol>`: Esta tag `<ol>` é usada para criar uma lista ordenada, onde os itens são numerados.
-- `<li>`: Esta tag `<li>` é usada para criar itens de lista dentro de uma lista ordenada (`<ol>`). Cada item é uma resposta a uma pergunta frequente.
-- `<strong>`: Esta tag `<strong>` é usada para enfatizar o texto, tornando-o mais destacado ou em negrito.
+- `<br>`: Esta tag `<br>` é usada para criar uma quebra de linha.
+- `<ol>`: Esta tag `<ol>` é usada para criar uma lista.
+- `<li>`: Esta tag `<li>` é usada para criar itens de lista dentro de uma lista. 
+- `<strong>`: Esta tag `<strong>` é usada para enfatizar o texto, tornando-o em negrito.
 
 ### CSS
-
-1. `*`:
-   - `box-sizing: border-box;`: Define a modelagem da caixa para o padrão "border-box".
-   - `margin: 0;`: Remove margens padrão de todos os elementos.
-   - `padding: 0;`: Remove preenchimentos padrão de todos os elementos.
-
-2. `.botaofixo`:
-   - Define o estilo para um botão de posição fixa no canto inferior direito da página.
-
-3. `.linha-superior, .linha-inferior`:
-   - Define o estilo para linhas superior e inferior.
-
-4. `body`:
-   - Define o estilo geral do corpo da página, como a fonte, cor de fundo e cor do texto.
-
-5. `.container`:
-   - Define o estilo para um contêiner com largura máxima e margens automáticas.
-
-6. `header`:
-   - Define o estilo para o cabeçalho da página, incluindo a cor de fundo e a borda inferior.
-
-7. `header ul`:
-   - Define o estilo para a lista não ordenada no cabeçalho.
-
-8. `header ul li`:
-   - Define o estilo para os itens da lista no cabeçalho.
-
-9. `header a`:
-   - Define o estilo para os links no cabeçalho, incluindo a cor e a transição de cor.
-     
-10. `#inicial`:
-    - Define o estilo para a seção inicial da página, incluindo a imagem de fundo e estilos de texto.
-
-11. `#reservas`:
-    - Define o estilo para a seção de reservas, incluindo a cor de fundo e estilos para inputs e botões.
-
-12. `.acomodacoes`:
-    - Define o estilo para uma grade de acomodações.
-
-13. `.acomodacao`:
-    - Define o estilo para cada acomodação, incluindo caixa, imagem e efeitos de hover.
-
-14. `.acomodacao h4` e `.acomodacao p`:
-    - Define o estilo para títulos e parágrafos dentro das acomodações.
-
-15. `#ohotel img`:
-    - Define o estilo para as imagens na seção do hotel.
-
-16. `#ohotel h3, #acomodacoes h3, #gastronomia h3, #contato h3`:
-    - Define o estilo para os títulos nas seções da página.
-
-17. `#gastronomia h4`:
-    - Define o estilo para os títulos da seção de gastronomia.
-
-18. `#ohotel p, #gastronomia p, #contato p`:
-    - Define o estilo para parágrafos nas seções da página.
-
-19. `#ohotel, #gastronomia, #contato, img`:
-    - Define o estilo para imagens e seus contêineres.
-
-20. `#gastronomia img`:
-    - Define o estilo para imagens na seção de gastronomia.
-
-21. `footer`:
-    - Define o estilo para o rodapé da página.
-
-22. `address`:
-    - Define o estilo para o elemento de endereço no rodapé.
-
-23. `#titulodf`, `#p1`, `#p2`, `ol`, `li`, `li strong`:
-    - Define o estilo específico para elementos na página "df.html", como cabeçalho, parágrafos, listas e itens de lista.
+- `box-sizing: border-box;`: Define a modelagem da caixa para o padrão "border-box".
+- `margin: 0;`: Remove margens padrão de todos os elementos.
+- `padding: 0;`: Remove preenchimentos padrão de todos os elementos.
+- `.botaofixo`: Define o estilo para um botão de posição fixa no canto inferior direito da página.
+- `.linha-superior, .linha-inferior`: Define o estilo para linhas superior e inferior.
+- `body`: Define o estilo geral do corpo da página, como a fonte, cor de fundo e cor do texto.
+- `.container`: Define o estilo para um contêiner com largura máxima e margens automáticas.
+- `header`: Define o estilo para o cabeçalho da página, incluindo a cor de fundo e a borda inferior.
+- `header ul`: Define o estilo para a lista não ordenada no cabeçalho.
+- `header ul li`: Define o estilo para os itens da lista no cabeçalho.
+- `header a`: Define o estilo para os links no cabeçalho, incluindo a cor e a transição de cor.
+- `#inicial`: Define o estilo para a seção inicial da página, incluindo a imagem de fundo e estilos de texto.
+- `#reservas`: Define o estilo para a seção de reservas, incluindo a cor de fundo e estilos para inputs e botões.
+- `.acomodacoes`: Define o estilo para uma grade de acomodações.
+- `.acomodacao`: Define o estilo para cada acomodação, incluindo caixa, imagem e efeitos de hover.
+- `.acomodacao h4` e `.acomodacao p`: Define o estilo para títulos e parágrafos dentro das acomodações.
+- `#ohotel img`: Define o estilo para as imagens na seção do hotel.
+- `#ohotel h3, #acomodacoes h3, #gastronomia h3, #contato h3`: Define o estilo para os títulos nas seções da página.
+- `#gastronomia h4`: Define o estilo para os títulos da seção de gastronomia.
+- `#ohotel p, #gastronomia p, #contato p`: Define o estilo para parágrafos nas seções da página.
+- `#ohotel, #gastronomia, #contato, img`: Define o estilo para imagens e seus contêineres.
+- `#gastronomia img`: Define o estilo para imagens na seção de gastronomia.
+- `footer`: Define o estilo para o rodapé da página.
+- `address`:  Define o estilo para o elemento de endereço no rodapé.
+- `#titulodf`, `#p1`, `#p2`, `ol`, `li`, `li strong`: Define o estilo específico para elementos na página "df.html", como cabeçalho, parágrafos, listas e itens de lista.
    
 
 
