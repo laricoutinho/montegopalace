@@ -5,25 +5,77 @@
 }
 
 
+/* botão ida */
 .botaofixo {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 100px;
-  height: 100px; 
+  height: 100px;
   background-color: #00008B;
   color: #fff;
-  border-radius: 50%; 
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   z-index: 999;
+  font-size: 14px; 
 }
 
-.linha-superior, .linha-inferior {
-  font-size: 14px;
+/* telas menores */
+@media screen and (max-width: 768px) {
+  .botaofixo {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+}
+
+/* telas mais menores */
+@media screen and (max-width: 480px) {
+  .botaofixo {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+}
+
+.botaodevolta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #00008B;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 999;
+  font-size: 14px; /* Tamanho de fonte padrão */
+}
+
+/* telas menores */
+@media screen and (max-width: 768px) {
+  .botaodevolta {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+}
+
+/* telas menores */
+@media screen and (max-width: 480px) {
+  .botaodevolta {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
 }
 
 /*geral*/
@@ -127,7 +179,7 @@ header a:hover {
 }
 
 
-/*acomodações*/
+/* acomodações tela grande */
 .acomodacoes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -148,43 +200,56 @@ header a:hover {
   overflow: hidden;
 }
 
-.acomodacao img{
+.acomodacao img {
   max-width: 500px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* telas menores */
+@media screen and (max-width: 768px) {
+  .acomodacoes {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-
-.acomodacao:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* telas mais menores */
+@media screen and (max-width: 480px) {
+  .acomodacoes {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-.acomodacao h4 {
-  font-size: 24px;
-  margin-top: 10px;
-  color: #00008B;
+  .acomodacao p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.acomodacao p {
-  font-size: 18px;
-  color: #777;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-
-/*imagem hotel */
-#ohotel img{
+/* imagem hotel tela grande */
+#ohotel img {
   width: 800px;
   height: auto;
 }
 
+/* imagem hotel telas menores */
+@media screen and (max-width: 768px) {
+  #ohotel img {
+    width: 100%;
+    height: auto;
+  }
+}
 
-/*títulos de #acomodacoes, #gastronomia e #contato*/
+/* imagem hotel telas mais menores */
+@media screen and (max-width: 480px) {
+  #ohotel img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*títulos de acomodacoes gastronomia contato*/
 #ohotel h3,
 #acomodacoes h3,
 #gastronomia h3,
@@ -205,18 +270,37 @@ header a:hover {
   font-size: 20px;
 }
 
-/*parágrafos de ohotel, gastronomia  e contato*/
+/* parágrafos telas grandes */
 #ohotel p,
 #gastronomia p,
-#contato p{
+#contato p {
   color: #333;
   padding-left: 125px;
   padding-right: 125px;
   text-align: center;
-  
 }
 
-/*parágrafos de ohotel, gastronomia  e contato*/
+/* parágrafos telas menores */
+@media screen and (max-width: 768px) {
+  #ohotel p,
+  #gastronomia p,
+  #contato p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* parágrafos telas mais menores */
+@media screen and (max-width: 480px) {
+  #ohotel p,
+  #gastronomia p,
+  #contato p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* imagem ao centro em ohotel gastronomia  contato */
 #ohotel,
 #gastronomia,
 #contato,
@@ -227,10 +311,26 @@ header a:hover {
 }
 
 
-/*imagens gastronomia*/
-#gastronomia img{
+/* imagem gastronomia telas grandes */
+#gastronomia img {
   width: 800px;
   height: auto;
+}
+
+/* imagem gastronomia telas menores */
+@media screen and (max-width: 768px) {
+  #gastronomia img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* imagem gastronomia telas maais menores */
+@media screen and (max-width: 480px) {
+  #gastronomia img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*footer*/
@@ -285,3 +385,44 @@ li {
 li strong {
   color: #00008B;
 }
+
+  /* APARTIR DAQUI DF.HMTL */
+  body {
+    font-family: 'Niramit', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  
+  /*cabeçalho*/
+  #titulodf {
+    background-color: #00008B;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #p1 {
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  
+  #p2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+  
+  /*lista*/
+  ol {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  li strong {
+    color: #00008B;
+  }
