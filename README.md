@@ -65,8 +65,14 @@ Não é necessário instalar nada para executar o projeto. Basta abrir o arquivo
 
 - Autor: Larissa Coutinho
 - Imagens: Pexels, iStock e outros bancos de imagens.
-  
 
+
+## Link para o site
+- https://montego-palace.netlify.app/
+- https://laricoutinho.github.io/montegopalace/
+
+
+  
 ## Tags, Seletores e Classes Usados e Suas Funções
 
 ### HTML da Primeira Página
